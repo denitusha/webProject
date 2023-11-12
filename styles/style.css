@@ -1,0 +1,97 @@
+/*
+Color Palette:
+         #d5e1df -> main gri
+         #e3eaa7 -> main bezhe
+         #b5e7a0 -> jeshile e lehte
+         #86af49 -> jeshile pak me e erret
+         #405d27 -> jeshile shume e erret
+
+
+*/
+
+/* DO NOT REMOVE THIS ONE!*/
+body{
+    margin:0 !important;
+    background-color: #d5e1df;
+}
+
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    background-color:  #86af49;
+    overflow: hidden;
+    padding:5px;
+  }
+  
+  .topnav a {
+    font-weight: 600;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 15px;
+  }
+  
+  .topnav a:hover {
+    background-color: #9fc468;
+    color: #405d27;
+  }
+  
+  .topnav a.active {
+    background-color: #73983c;
+    color: white;
+  }
+
+  .routes{
+    margin-left:10px;
+  }
+
+  .btn-login{
+    font-weight: 600;
+    font-size: 17px;
+    padding: 14px 16px;
+    background-color: #628231;
+    color:#f2f2f2;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .btn-container{
+    margin-right:10px;
+  }
+
+  .logo-container{
+    margin-left: 10px;
+  }
+  .text-logo{
+    font-size: 20px;
+    color:#405d27;
+    font-weight: 900;
+    padding:none;
+    margin:none;
+  }
+
+  .btn-cart{
+    font-weight: 600;
+    font-size: 17px;
+    padding: 14px 16px;
+    background-color: #628231;
+    color:#f2f2f2;
+    border: none;
+    border-radius: 20px;
+    margin-right: 2px;
+  }
+
+  .btn-login:hover{
+    background-color: #9fc468;
+    color: #405d27;
+    cursor: pointer;
+  }
+  .btn-cart:hover{
+    background-color: #9fc468;
+    color: #405d27;
+    cursor: pointer;
+  }
