@@ -1,0 +1,89 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 13 / 3; }
+    .div2 { grid-area: 1 / 4 / 4 / 6; }
+    .div3 { grid-area: 4 / 4 / 7 / 6; }
+    .div4 { grid-area: 7 / 4 / 10 / 6; }
+    .div5 { grid-area: 1 / 7 / 4 / 9; }
+    .div6 { grid-area: 4 / 7 / 7 / 9; }
+    .div7 { grid-area: 7 / 7 / 10 / 9; }
+    .div8 { grid-area: 1 / 10 / 4 / 12; }
+    .div9 { grid-area: 4 / 10 / 7 / 12; }
+    .div10 { grid-area: 7 / 10 / 10 / 12; }
+
+
+    .sidebar-title {
+        display: flex;
+        justify-content: center;
+        color: #3d4d23;
+        font-size:50px;
+        font-weight: bolder;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    .sidebar-p{
+        color: #3d4d23;
+        font-size: 20px;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    .card {
+        margin-top: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+      }
+
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      /* Add some padding inside the card container */
+      .container {
+        display: flex;
+        padding: 2px 16px;
+        justify-content: space-between;
+      }
+      
+      /* Add rounded corners to the top left and the top right corner of the image */
+      img {
+        border-radius: 5px 5px 0 0;
+      }
+
+      .btn-add{
+        font-weight: 600;
+        font-size: 17px;
+        padding: 14px 16px;
+        background-color: #628231;
+        color:#f2f2f2;
+        border: none;
+        border-radius: 20px;
+        margin-top: 20px;
+      }
+
+      .btn-add:hover{
+        background-color: #9fc468;
+        color: #405d27;
+        cursor: pointer;
+      }
+
+      .div1{
+        background-color: #86af49;
+        border-top: 2px solid #628231;
+      }
+
+      p{
+        color: #628231;
+        font-weight: bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
