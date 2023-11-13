@@ -1,0 +1,40 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #b5e7a0 ;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+nav img {
+    width: 50px;
+    padding: 10px;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+h3 {
+    color: #777;
+}
+
+p {
+    line-height: 1.6;
+}
