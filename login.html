@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body>
-	<script src="./scripts/index.js"></script>
-  </body>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
+</head>
+<body>
+  <div class="wrapper"> 
+    <span class="icon-close">
+      <ion-icon name="close-outline"></ion-icon>
+    </span> 
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <input type="text" id="loginUsername" required>
+            <label>Username</label>    
+          </div>        
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <input type="password" id="loginPassword" required>
+            <label>Password</label>
+            <span id="UsernameSpn"></span>
+          </div>
+          <button type="button" class="btn" onclick="validateAndSubmit('login')">Login</button>
+          <div class="login-register">
+            <p>Don't have an account?<a href="#" class="register-link" >Register</a></p>
+          </div>  
+        </form>
+    </div>
+
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form id="registerForm">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person-outline"></ion-icon>
+          </span>
+          <input type="text" id="registerUsername" required>
+          <label>Username</label>
+          <span id="usernameSpn"></span>
+        </div>  
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </span>
+          <input type="email" id="registerEmail" required>
+          <label>Email</label>
+          <span id="emailSpn"></span>
+        </div>         
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </span>
+          <input type="password" id="registerPassword" required>
+          <label>Password</label>
+          <span id="passwordSpn"></span>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" id = "checkbox" required>
+            I agree to the terms & conditions</label>
+            <span id="checkboxSpn"></span>
+        </div>
+        <button type="button" class="btn" onclick="validateAndSubmit('register')">Register</button>
+        <div class="login-register">
+          <p>Already have an account?<a href="#" class="login-link" >Login</a></p>
+        </div>  
+      </form>
+    </div>
+  </div>
+  <footer>
+    <span>&copy; <span id="currentYear"></span> ByteBite. All rights reserved.</span>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="scripts/login.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
