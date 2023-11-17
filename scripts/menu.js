@@ -1,3 +1,5 @@
+// to be used for later testing (dynamic menu display when we implement it)- dejvi
+
 const food = [
     {
         name:'Indian Wedding',
