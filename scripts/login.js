@@ -6,11 +6,17 @@ setInterval(() => {
     document.getElementById("currentYear").innerHTML = new Date().toLocaleTimeString();
 }, 1000)
 
+const close = document.querySelector('#close')
+
 registerLink.addEventListener('click', ()=>{
     event.preventDefault();
     resetErrors();
     resetInputs()
     wrapper.classList.add('active');
+})
+
+close.addEventListener('click', ()=>{
+    window.location.href = "home.html"
 })
 
 loginLink.addEventListener('click', ()=>{
