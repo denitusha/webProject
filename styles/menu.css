@@ -18,21 +18,75 @@
     .div10 { grid-area: 7 / 10 / 10 / 12; }
 
 
-    .sidebar-title {
+    /* .sidebar-title {
         display: flex;
         justify-content: center;
         color: #3d4d23;
         font-size:50px;
         font-weight: bolder;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } */
+
+    /* .p-container{
+      position: relative;
+      background-color: #d5e1df;
+      width: 80%;
+      margin-left: 27px;
+      padding: 2px;
+      border-radius: 20px;
+      border: 1px solid #3d4d23;
+      box-shadow: 4px 4px 8px 4px #3d4d23e5;
     }
 
 
     .sidebar-p{
         color: #3d4d23;
         font-size: 20px;
-        text-align: center;
+        text-align:justify;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } */
+
+    .sidebar-text-container{
+      position: relative;
+
+      margin-top: -60px;
+    }
+    .sidebar-p{
+      font-size: large;
+      text-align:center;
+      margin-left: 17px;
+      width: 90%;
+    }
+    .pp1{
+      color: #0a4132de;
+      font-family: cursive;
+    }
+
+    .pp2{
+      color: #489c7a;
+      font-family: cursive;
+    }
+    
+    .sidebar-title{
+      display: flex;
+      justify-content: space-evenly;
+      width: 80%;
+      margin-left: 32px;
+    }
+
+    .t1, .t2{
+        font-size: 30px;
+        font-weight: bolder ;
+        width: 20px;
+        font-family:cursive;
+    }
+
+    .t1{
+      color:#0a4132de;
+    }
+
+    .t2{
+      color: #489c7a;
     }
 
 
@@ -40,22 +94,22 @@
         margin-top: 20px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        border-radius: 5px; /* 5px rounded corners */
+        border-radius: 20px;
       }
 
-      /* On mouse-over, add a deeper shadow */
+ 
       .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
       }
       
-      /* Add some padding inside the card container */
+
       .container {
         display: flex;
         padding: 2px 16px;
         justify-content: space-between;
       }
       
-      /* Add rounded corners to the top left and the top right corner of the image */
+
       img {
         border-radius: 5px 5px 0 0;
       }
@@ -78,8 +132,9 @@
       }
 
       .div1{
-        background-color: #86af49;
-        border-top: 2px solid #628231;
+        /* background-color: #86af49; */
+        background-image: linear-gradient(#86af49ea, #c4d6d3ce, #86af49ea );
+        /* border-top: 2px solid #628231; */
       }
 
       p{
