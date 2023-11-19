@@ -129,6 +129,45 @@ for (let i = 0; i < closeIcons.length; i++) {
   });
 }
 
+/* loop: for add event on multiple `increment` & `decrement` button */
+for (let i = 0; i < incrementBtn.length; i++) {
+
+  incrementBtn[i].addEventListener('click', function () {
+
+    // collect the value of `quantity` textContent,
+    // based on clicked `increment` button sibling.
+    let increment = Number(this.previousElementSibling.textContent);
+
+    // plus `increment` variable value by 1
+    increment++;
+
+    // show the `increment` variable value on `quantity` element
+    // based on clicked `increment` button sibling.
+    this.previousElementSibling.textContent = increment;
+
+    totalCalc();
+
+  });
+
+
+  decrementBtn[i].addEventListener('click', function () {
+
+    // collect the value of `quantity` textContent,
+    // based on clicked `decrement` button sibling.
+    let decrement = Number(this.nextElementSibling.textContent);
+
+    // minus `decrement` variable value by 1 based on condition
+    decrement <= 1 ? 1 : decrement--;
+
+    // show the `decrement` variable value on `quantity` element
+    // based on clicked `decrement` button sibling.
+    this.nextElementSibling.textContent = decrement;
+
+    totalCalc();
+
+  });
+
+}
 
 
 const totalCalc = function () {
