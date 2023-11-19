@@ -39,12 +39,14 @@ function renderTable() {
 
       var cellPrice = document.createElement('td');
       var price = getPriceForProduct(order.product);
+      cellPrice.className = 'cellprice'
       cellPrice.textContent = price.toFixed(2);
       row.appendChild(cellPrice)
 
       var cellTotal = document.createElement('td');
       var total = (order.quantity * getPriceForProduct(order.product)).toFixed(2);
       cellTotal.textContent = total; 
+      cellTotal.className = 'cellTotal'
       // Calculate and display total
       row.appendChild(cellTotal);
 
@@ -53,6 +55,7 @@ function renderTable() {
 
       var editButton = document.createElement('button');
       editButton.textContent = 'Edit';
+      editButton.className = 'btn-edit'
       editButton.onclick = function() {
           editOrder(order.id);
       };
@@ -60,6 +63,7 @@ function renderTable() {
 
       var deleteButton = document.createElement('button');
       deleteButton.textContent = 'Delete';
+      deleteButton.className = 'btn-delete'
       deleteButton.onclick = function() {
           deleteOrder(order.id);
       };

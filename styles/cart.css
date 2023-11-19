@@ -50,7 +50,7 @@ Color Palette:
     box-sizing: border-box;
   }
   
-  html { font-family:  sans-serif; }
+  body { font-family:  sans-serif; }
   
   a {
     color: inherit;
@@ -74,7 +74,7 @@ Color Palette:
     border: none;
   }
   
-  input:focus { outline: 2px solid var(--azure); }
+  input:focus { outline: 2px solid #86af49; }
   
  
   input::-webkit-inner-spin-button,
@@ -143,10 +143,11 @@ Color Palette:
     padding: 40px var(--px);
     background: white;
     border-right: 1px solid #d5e1df;
+    border-radius: 20px;
   }
   
   .section-heading {
-    color: var(--onyx);
+    color: #86af49;
     margin-bottom: 30px;
     font-size: var(--fs-24);
     font-weight: var(--fw-5);
@@ -168,7 +169,7 @@ Color Palette:
   }
   
   .payment-method .method {
-    border: 1px solid var(--quick-silver);
+    border: 2px solid var(--quick-silver);
     border-radius: var(--radius);
     width: 50%;
     display:     flex;
@@ -178,7 +179,7 @@ Color Palette:
     cursor: pointer;
   }
   
-  .payment-method .selected { border-color: var(--azure); }
+  .payment-method .selected { border-color: #86af49; }
   
   .payment-method .method ion-icon { font-size: 20px; }
   
@@ -187,7 +188,7 @@ Color Palette:
     color: var(--quick-silver);
   }
   
-  .payment-method .method .fill { color: var(--azure); }
+  .payment-method .method .fill { color: #86af49; }
   
   .shipping-address{
     position: relative;
@@ -202,7 +203,7 @@ Color Palette:
     font-size: var(--fs-21);
   }
   .label-shipping{
-    color: var(--onyx);
+    color: #86af49;
     margin-bottom: 20px;
     font-size: var(--fs-24);
     font-weight: var(--fw-5);
@@ -214,7 +215,7 @@ Color Palette:
     writing-mode: horizontal-tb;
     height: 50px;
     color: var(--davys-gray);
-    border: 1px solid var(--quick-silver);
+    border: 1px solid #86af49;
     border-radius: var(--radius)
   }
 
@@ -268,13 +269,13 @@ Color Palette:
   
   .btn:focus {
     color: var(--white);
-    background: var(--azure);
-    outline: 2px solid var(--azure);
+    background: #86af49;
+    outline: 2px solid #86af49;
     outline-offset: 2px;
   }
   
   .btn-primary {
-    background: var(--azure);
+    background: #405d27c9;
     font-weight: var(--fw-5);
     color: var(--white);
     padding: 13px 45px;
@@ -378,12 +379,12 @@ Color Palette:
   
   .btn-outline {
     padding: 10px 25px;
-    border: 1px solid var(--azure);
-    color: var(--azure);
+    border: 1px solid #86af49;
+    color: #86af49;
   }
   
   .btn-outline:hover {
-    background: var(--azure);
+    background: #86af49;
     color: var(--white);
   }
   

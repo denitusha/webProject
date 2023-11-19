@@ -89,7 +89,7 @@ footer{
     right: 0;
     width: 45px;
     height: 45px;
-    background: #86af49;
+    background: #405d27e0 ;
     font-size: 2em;
     color: #fff;
     display: flex;
@@ -101,7 +101,7 @@ footer{
 }
 .form-box  h2{
     font-size:  2em; 
-    color: #86af49;
+    color: #405d27e0;
     text-align: center;
 }
 
@@ -175,15 +175,20 @@ footer{
 .btn {
     width: 100%;
     height: 45px;
-    background: #86af49;
+    background: #405d27e0 ;
     border: none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1em;
     color: #fff;
     font-weight: 500;
 }
+.btn:hover, .icon-close:hover{
+    background-color: #9fc468;
+    color: #405d27;
+    cursor: pointer;
+  }
 
 .login-register{
     font-size: .95em;
@@ -194,7 +199,7 @@ footer{
 }
 
 .login-register p a {
-    color: #86af49;
+    color: #405d27 ;
     text-decoration: none;
     font-weight: 600;
 

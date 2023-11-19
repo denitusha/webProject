@@ -10,31 +10,37 @@
   </head>
   <body>
     <!--NAVBAR (do not remove, this should be in every page except the login and signup one) -->
+    
     <div class="topnav">
-        <div class="logo-container">
-            <h1 class="text-logo">ByteBite</h1>
-        </div>
-        <div class="routes">
-            <a class="" href="home.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="orders.html">Orders</a>
-            <a href="about.html">About</a>
-        </div>
-
-        <div class="btn-container">
-            <a href="cart.html" class="btn-cart">Cart</a>
-            <a href="login.html" class="btn-login">Login</a>
-        </div>
+      <div class="logo-container">
+          <h1 class="text-logo">ByteBite</h1>
       </div>
+      <div class="routes">
+          <a class="" id="home" href="home.html">Home</a>
+          <a id="menu" href="menu.html">Menu</a>
+          <a id="orders" href="orders.html">Orders</a>
+          <a id="about" href="about.html">About</a>
+      </div>
+
+      <div class="btn-container">
+          <a href="cart.html" class="btn-cart">Cart</a>
+          <a href="login.html" class="btn-login">Login</a>
+      </div>
+    </div>
       <!-- Write code below! -->
+      <main class="container">
+
+        <h1 class="heading">
+          <ion-icon name="cart-outline"></ion-icon> Orders
+        </h1>
       <table id="ordersTable">
         <thead>
             <tr>
                 <th>Order ID</th>
                 <th>Product</th>
                 <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
+                <th class="price">Price</th>
+                <th class="price">Total</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -42,31 +48,39 @@
             <!-- Table rows will be dynamically generated here -->
         </tbody>
     </table>
+    </main>
 
     <!-- Modal -->
     <div id="editModal" class="modal">
       <div class="modal-content">
-          <span class="close" id="closeBtn">&times;</span>
-          <h2>Edit Order</h2>
+          <span class="close" class="btn-x" id="closeBtn">&times;</span>
+          <h2 class="m-title">Edit Order</h2>
           <label for="productName">Product Name:</label>
           <select id="productName" onChange = "updatePrice()">
           </select>
-          <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity">
-          <label for="price">Price:</label>
-          <span id="price">0.00</span>
-          <button id="saveBtn" onclick="saveChanges()">Save Changes</button>
+          <label for="quantity" class="m-label">Quantity:</label>
+          <input type="number" class="m-input" id="quantity">
+          <label for="price" class="m-label">Price:</label>
+          <span id="price" class="cellprice">0.00</span>
+          <button id="saveBtn" class="btn-save" onclick="saveChanges()">Save Changes</button>
       </div>
     </div>
 
     <div id="confirmationModal" class="modal">
-      <div class="modal-content">
-          <h2>Confirm Deletion</h2>
-          <p>Are you sure you want to delete this order?</p>
-          <button id="confirmDeleteBtn" onclick="closeConfirmationModal()">Yes, Delete</button>
+      <div class="modal-content2">
+        <h2 class="m-title">Confirm Deletion</h2>
+        <p>Are you sure you want to delete this order?</p>
+        <div class="btn-cont">
+          <button id="confirmDeleteBtn" class="" onclick="closeConfirmationModal()">Yes, Delete</button>
           <button onclick="closeConfirmationModal()">Cancel</button>
+
+        </div>
       </div>
   </div>
+
+  <footer>
+    <span>&copy; <span id="currentYear"></span> ByteBite. All rights reserved.</span>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="./scripts/index.js"></script>
