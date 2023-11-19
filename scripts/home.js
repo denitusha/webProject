@@ -1,7 +1,8 @@
+// Slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Previous and next controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -27,6 +28,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Time footer
 setInterval(() => {
     document.getElementById("currentYear").innerHTML = new Date().toLocaleTimeString();
 }, 1000)
