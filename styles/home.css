@@ -122,8 +122,9 @@ img {
 footer{
     background-color: #e3eaa7;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     padding: 20px;
     width: 100%;
     bottom: -10px;
+    margin-top:230px;
 } 

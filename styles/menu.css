@@ -142,3 +142,13 @@
         font-weight: bold;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
+
+      footer{
+        background-color: #e3eaa7;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        bottom: -10px;
+        overflow-x: hidden;
+    } 
