@@ -129,6 +129,24 @@ for (let i = 0; i < closeIcons.length; i++) {
   });
 }
 
+/* loop: for add event on multiple `increment` & `decrement` button */
+for (let i = 0; i < incrementBtn.length; i++) {
+
+  incrementBtn[i].addEventListener('click', function () {
+    let increment = Number(this.previousElementSibling.textContent);
+    increment++;
+    this.previousElementSibling.textContent = increment;
+    totalCalc();
+  });
+
+  decrementBtn[i].addEventListener('click', function () {
+    let decrement = Number(this.nextElementSibling.textContent);
+    decrement <= 1 ? 1 : decrement--;
+    this.nextElementSibling.textContent = decrement;
+    totalCalc();
+  });
+
+}
 
 
 const totalCalc = function () {
