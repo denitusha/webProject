@@ -65,7 +65,7 @@ function renderTable() {
       deleteButton.textContent = 'Delete';
       deleteButton.className = 'btn-delete'
       deleteButton.onclick = function() {
-          deleteOrder(order.id);
+        confirmDeleteOrder(order.id);
       };
       cellActions.appendChild(deleteButton);
 
@@ -74,7 +74,6 @@ function renderTable() {
       tbody.appendChild(row);
   });
 }
-
 
 // Call the renderTable function to initially populate the table
 renderTable();
@@ -162,26 +161,6 @@ function saveChanges() {
   }
 
 
-function deleteOrder(orderId) {
-
-  openConfirmationModal();
-  // Find the order index in the array
-  var index = orders.findIndex(function(order) {
-      return order.id === orderId;
-  });
-
-  if (index !== -1) {
-      // Remove the order from the array
-      orders.splice(index, 1);
-      // Update the table
-      renderTable();
-      console.log('Deleted order:', orderId);
-  } else {
-      console.log('Order not found:', orderId);
-  }
-}
-
-
 function updatePrice() {
   var selectedProduct = document.getElementById('productName').value;
 
@@ -223,6 +202,7 @@ function closeConfirmationModal() {
 }
 
 function confirmDeleteOrder(orderId) {
+
   // Function to delete the order
   function deleteAndClose() {
       // Find the index of the order with the specified ID
@@ -249,9 +229,6 @@ function confirmDeleteOrder(orderId) {
 }
 
 
-
-
-
-        document.getElementById('closeBtn').addEventListener('click', closeModal);
-        document.getElementById('productName').addEventListener('change', updatePrice);
-        document.getElementById('saveBtn').addEventListener('click', saveChanges);
+document.getElementById('closeBtn').addEventListener('click', closeModal);
+document.getElementById('productName').addEventListener('change', updatePrice);
+document.getElementById('saveBtn').addEventListener('click', saveChanges);
