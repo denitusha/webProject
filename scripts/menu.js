@@ -56,3 +56,7 @@ const food = [
         id: 9
     }
 ]
+
+setInterval(() => {
+    document.getElementById("currentYear").innerHTML = new Date().toLocaleTimeString();
+}, 1000)
