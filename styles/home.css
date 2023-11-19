@@ -1,0 +1,172 @@
+/* Background image */
+body {
+
+  background-attachment: fixed; 
+  background-size: cover;
+
+}
+
+/* Welcome to ByteBite */
+.welcome {
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #405d27;
+    margin-top: -30px;
+    margin-left: 40px;
+
+} 
+
+/* Page introduction */
+.paragraph {
+
+    font-family: baskerville serif;
+    font-size: 20px;
+    color: #405d27;
+    margin-top: -40px;
+    margin-left : 45px;
+
+}
+
+/* Log-in link */
+.a-link:link {
+
+    color: #405d27;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+  
+.a-link:visited {
+
+    color: #86af49;
+
+}
+  
+.a-link:hover {
+
+    color: #b5e7a0;
+
+}
+
+ a.link:active {
+
+    color: #e3eaa7;
+
+}
+
+/* Company logo */
+.logo {
+
+    display: flex;
+    align-items: center;
+
+}
+
+/* Logo size */
+img {
+
+    width: 220px;
+    margin-right: 20px;
+
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow */
+.slideshow-container {
+
+  max-width: 500px;
+  position: relative;
+  margin-left: 40px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Previous and next buttons */
+.prev, .next {
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* A little see-through black background for the prev/next buttons */
+.prev:hover, .next:hover {
+
+  background-color: rgba(0,0,0,0.8);
+
+}
+
+/* Caption text */
+.text {
+
+  color: #405d27;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+/* Number text */
+.numbertext {
+
+  color: #405d27;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+}
+
+/* Fading animation */
+.fade {
+
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes fade {
+
+  from {opacity: .4} 
+  to {opacity: 1}
+
+}
+
+/* Time footer */
+footer{
+
+    background-color: #e3eaa7;
+    text-align: center;
+    /* position: fixed; */
+    padding: 20px;
+    width: 100%;
+    bottom: -10px;
+    margin-top:230px;
+} 
