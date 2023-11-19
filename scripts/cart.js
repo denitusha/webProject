@@ -15,10 +15,11 @@ const button1 = document.querySelectorAll('#button1');
 
 
 
-// loop: add event listeners for multiple `increment` & `decrement` buttons
+
 $(document).ready(function () {
   // Event listener for the "Pay in delivery" button
   $('.payment-method .method:nth-child(2)').on('click', function () {
+    resetErrors();
     $('.card-payment').addClass('hide');
     $('.payment-method .method:nth-child(1) .checkmark').removeClass('fill');
     $('.payment-method .method:nth-child(1)').removeClass('selected');
@@ -28,6 +29,7 @@ $(document).ready(function () {
   });
 
   $('.payment-method .method:nth-child(1)').on('click', function () {
+    resetErrors();
     $('.card-payment').removeClass('hide');
     $('.payment-method .method:nth-child(2) .checkmark').removeClass('fill');
     $('.payment-method .method:nth-child(2)').removeClass('selected');
@@ -42,9 +44,6 @@ $(document).ready(function () {
     if ($(this).text() === 'Pay') {
       validateAndSubmit();
     }
-    // if ($(this).text().toLowerCase() === 'order' || $(this).text().toLowerCase() === 'pay') {
-    //   alert('Order successful!');
-    // }
   });
 });
 function validateAndSubmit(buttonText) {
@@ -60,9 +59,6 @@ function validateAndSubmit(buttonText) {
     }
     // Check if the buttonText contains "Pay"
     if (buttonText.includes("Pay")) {
-
-
-      // Reset error messages
 
 
       // Validate the card payment form
